@@ -4,14 +4,12 @@ $(function () {
     // getting and output of date
 
     let now = new Date().toLocaleDateString('en-us', { weekday:"long", month:"long", day:"numeric"});
-
+     //outputting date to html
     $("#currentDay").text(now);
-     console.log(now);
-     
-
+    
+      //setting new variable for current date
      var currentDate = new Date();
-     console.log(currentDate.getHours());
-
+     
 
        //button var
       var btn06 = $("#btn06");
@@ -59,6 +57,8 @@ $(function () {
      changeColor(input5, 17);
      changeColor(input6pm, 18);
 
+     //function to change color according to time
+
         function changeColor (timeBlock, thetime){
             if (currentDate.getHours() == thetime){
 
@@ -74,7 +74,7 @@ $(function () {
 
         }
 
-     //$("#input06").css("background","grey");
+    
       
      
    // getting items from local storage
@@ -119,7 +119,7 @@ $(function () {
   
     
 
-    // button functions to store item
+    // button functions to store items
    // 6 am button
        btn06.on('click', store06);
        
