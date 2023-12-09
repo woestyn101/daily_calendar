@@ -1,8 +1,16 @@
-// Wrap all code that interacts with the DOM in a call to jQuery to ensure that
-// the code isn't run until the browser has finished rendering all the elements
-// in the html.
+
 $(function () {
 
+    // getting and output of date
+
+    let now = new Date().toLocaleDateString('en-us', { weekday:"long", month:"long", day:"numeric"});
+
+    $("#currentDay").text(now);
+     console.log(now);
+     
+
+     var currentDate = new Date();
+     console.log(currentDate.getHours());
 
 
        //button var
@@ -34,61 +42,80 @@ $(function () {
      var input4 = $("#input4");
      var input5 = $("#input5");
      var input6pm = $("#input6pm");
-  
+
+     // running functions to change background color
+
+     changeColor(input06, 6);
+     changeColor(input07, 7);
+     changeColor(input08, 8);
+     changeColor(input09, 9);
+     changeColor(input10, 10);
+     changeColor(input11, 11);
+     changeColor(input12, 12);
+     changeColor(input1, 13);
+     changeColor(input2, 14);
+     changeColor(input3, 15);
+     changeColor(input4, 16);
+     changeColor(input5, 17);
+     changeColor(input6pm, 18);
+
+        function changeColor (timeBlock, thetime){
+            if (currentDate.getHours() == thetime){
+
+                timeBlock.css("background","#fe6962");
+            }else if (currentDate.getHours() > thetime){
+                
+                timeBlock.css("background","#d3d3d3");
+            } else {
+            
+                timeBlock.css("background","#77db77");
+            
+            }
+
+        }
+
+     //$("#input06").css("background","grey");
       
      
    // getting items from local storage
      var getInput06 = localStorage.getItem("event06am");
-     console.log("local storage:", getInput06);
-       input06.text(getInput06);
+         input06.text(getInput06);
 
        var getInput07 = localStorage.getItem("event07am");
-       console.log("local storage:", getInput07);
-         input07.text(getInput07);
+           input07.text(getInput07);
 
          var getInput08 = localStorage.getItem("event08am");
-         console.log("local storage:", getInput08);
-           input08.text(getInput08);
+             input08.text(getInput08);
   
          var getInput09 = localStorage.getItem("event09am");
-         console.log("local storage:", getInput09);
-           input09.text(getInput09);
+             input09.text(getInput09);
 
          var getInput10 = localStorage.getItem("event10am");
-         console.log("local storage:", getInput10);
-           input10.text(getInput10);
+             input10.text(getInput10);
 
          var getInput11 = localStorage.getItem("event11am");
-         console.log("local storage:", getInput11);
-           input11.text(getInput11);
+             input11.text(getInput11);
 
          var getInput12 = localStorage.getItem("event12pm");
-         console.log("local storage:", getInput12);
-           input12.text(getInput12);
+             input12.text(getInput12);
 
          var getInput1 = localStorage.getItem("event1pm");
-         console.log("local storage:", getInput1);
-           input1.text(getInput1);
+             input1.text(getInput1);
 
          var getInput2 = localStorage.getItem("event2pm");
-         console.log("local storage:", getInput2);
-           input2.text(getInput2);
+             input2.text(getInput2);
 
          var getInput3 = localStorage.getItem("event3pm");
-         console.log("local storage:", getInput3);
-           input3.text(getInput3);
+             input3.text(getInput3);
 
          var getInput4 = localStorage.getItem("event4pm");
-         console.log("local storage:", getInput4);
-           input4.text(getInput4);
+             input4.text(getInput4);
 
          var getInput5 = localStorage.getItem("event5pm");
-         console.log("local storage:", getInput5);
-           input5.text(getInput5);
+             input5.text(getInput5);
 
          var getInput6pm = localStorage.getItem("event6pm");
-         console.log("local storage:", getInput6pm);
-           input6pm.text(getInput6pm);
+             input6pm.text(getInput6pm);
   
     
 
@@ -196,39 +223,8 @@ $(function () {
          localStorage.setItem("event6pm",input6pm.val())
          };
 
-
-                    
-  // setting background color of inputfield
-    $("#input06").css("background", "#d3d3d3");
-
-    // getting and output of date
-
-    let now = new Date().toLocaleDateString('en-us', { weekday:"long", month:"long", day:"numeric"});
-
-    $("#currentDay").text(now);
-console.log(now)
+  
 
 
-
-    //console.log("yes");
-    //alert("jquery loaded");
-    // TODO: Add a listener for click events on the save button. This code should
-    // use the id in the containing time-block as a key to save the user input in
-    // local storage. HINT: What does `this` reference in the click listener
-    // function? How can DOM traversal be used to get the "hour-x" id of the
-    // time-block containing the button that was clicked? How might the id be
-    // useful when saving the description in local storage?
-    //
-    // TODO: Add code to apply the past, present, or future class to each time
-    // block by comparing the id to the current hour. HINTS: How can the id
-    // attribute of each time-block be used to conditionally add or remove the
-    // past, present, and future classes? How can Day.js be used to get the
-    // current hour in 24-hour time?
-    //
-    // TODO: Add code to get any user input that was saved in localStorage and set
-    // the values of the corresponding textarea elements. HINT: How can the id
-    // attribute of each time-block be used to do this?
-    //
-    // TODO: Add code to display the current date in the header of the page.
   });
   
