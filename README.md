@@ -36,6 +36,10 @@ width Javascript and enable the user to interact with the page content.
 
 I used and modified code from the following resources:
 
+https://stackabuse.com/how-to-get-name-of-month-and-day-in-javascript/
+
+https://stackoverflow.com/questions/52840042/outputting-text-into-input-field-in-javascript
+
 ## License
 
 MIT

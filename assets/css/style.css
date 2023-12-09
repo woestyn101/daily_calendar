@@ -1,0 +1,40 @@
+#theline {
+    width:100%;
+    height: 0.5rem;
+    background-color: black;
+}
+
+.save-span {
+    background-color: dodgerblue;
+    padding:20px 30px;
+    cursor:pointer;
+}
+
+.icon-color{
+    color:white;
+
+}
+
+.span-time {
+    padding: 20px 20px;
+    background-color: #f8f8ff;
+    border-top: 2px #d3d3d3 dashed ;
+    /* 
+    border-bottom: 2px black dashed; */
+}
+
+.span-time2 {
+    padding: 20px 16px;
+    background-color: #f8f8ff;
+    border-top: 2px #d3d3d3 dashed ;
+    /* 
+    border-bottom: 2px black dashed; */
+}
+
+/* .row-time {
+    margin-bottom: 3px;
+} */
+
+/* #input06 {
+    background-color: blue;
+} */
