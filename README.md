@@ -19,7 +19,7 @@ During this project I learned how to:
 
 ## Link to website
 
-https://woestyn101.github.io/mod4Quiz/
+https://woestyn101.github.io/daily_calendar/
 
 ## Installation (N/A)
 
@@ -39,6 +39,8 @@ I used and modified code from the following resources:
 https://stackabuse.com/how-to-get-name-of-month-and-day-in-javascript/
 
 https://stackoverflow.com/questions/52840042/outputting-text-into-input-field-in-javascript
+
+https://www.w3schools.com/jsref/jsref_gethours.asp
 
 ## License
 
