@@ -1,21 +1,18 @@
 # Quiz Game OSU Bootcamp challenge 5
 
-# Daily Character
+# Daily Calendar
 
 ## Description
 
-This project challenged me to use javascript to create html elements.
+This project challenged me to use the jquery library.
 
 During this project I learned how to:
 
-- work with timers.
-- create html elements with Javascript and assign id or classes to them.
-- use the event parameter on functions.
-- add eventlisteners to html elements and buttons.
-- Change styling of elements with javasript
-- use localStorage to save data from user input.
-- use stringify and parse with json objects.
-- declare an object and save to local storage.
+- access elements on the page with jquery
+- display and format date and time in js.
+- use bootstrap to design a page.
+- store input from the users in local storage.
+- Display local storage items in the html.
 
 ## Link to website
 
@@ -41,6 +38,8 @@ https://stackabuse.com/how-to-get-name-of-month-and-day-in-javascript/
 https://stackoverflow.com/questions/52840042/outputting-text-into-input-field-in-javascript
 
 https://www.w3schools.com/jsref/jsref_gethours.asp
+
+https://www.youtube.com/watch?v=gwgeMole3gs
 
 ## License
 
